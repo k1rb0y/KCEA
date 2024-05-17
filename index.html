@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title> KCEA</title>
+</head>
+<style>
+    body {
+        background-color: #A8D0E6;
+        margin: 0;
+    }
+    .button {
+        padding: 8px 45px;
+        color: white;
+        font-size: 20;
+        margin-left: 30px ;
+        border-radius: 5px;
+        border: 0px;
+        background-color: #24305e ;
+        cursor: pointer;
+    
+    }
+    .button:hover {
+        background-color: #A8D0E6;
+        color: #374785;
+        font-weight: 900;
+    }
+    .button1 {
+        padding: 8px 45px;
+        color: #374785;
+        font-size: 20;
+        margin-left: 30px ;
+        border-radius: 5px;
+        border: 0;
+        background-color: #A8D0E6 ;
+        font-weight: 600;
+        
+    }
+    .sell{
+        background-color:aqua;
+        padding: 3px;
+        border-radius: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .length {
+        background-color: #374785;
+        padding: 0px;
+    }
+        .footer {
+        background-color: #374785;
+        padding: 50px;
+
+    }
+    .register {
+        float: right;
+        margin-right: 10px;
+        margin-top: 0;
+        border: 0cap;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: darksalmon;
+        color: black;
+    }
+    .register:hover{
+        background-color: rgb(237, 54, 54);
+    }
+    .container {
+        background-color: #F76C6C;
+        padding: 10px;
+        text-align: left;
+        color: aliceblue;
+        font-weight: 1000;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 35px;
+    }
+
+    /* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width:fit-content;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 8%;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nikola {
+    margin-left: 20%;
+    margin-right: 10%;
+    border: solid darkblue;
+    background-color: black;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+</style>
+<body>
+
+    <center>
+<button class = "register" onclick="document.location='register.html'"> Register </button>
+
+<div class = "container"><h2>KCEA </h2></div>
+
+    <div class ="length">
+<button class ="button1" onclick="document.location='index.html'"> Home </button>
+<button class ="button" onclick="document.location='shop.html'">  Shop </button>
+<button class ="button" onclick="document.location='about.html'"> About Us </button>
+<button class ="button" onclick="document.location='contacts.html'"> Contact us </button>
+
+</div>
+</center>
+<br><br><br>
+<center>
+    
+    <div class="sell"><h1> BEST SELLERS!!!</h1></div>
+    <br>
+<div class="slideshow-container" style="border: solid; border-color: gray; border-width: 5px;">
+    <div class="slides fade">
+        <img src="grill.jpg" alt="Car 1" width="1250" height="600">
+    </div>
+    <div class="slides fade">
+        <img src="s speaker.jpg" alt="Car 2" width="1250" height="600">
+    </div>
+    <div class="slides fade">
+        <img src="curved.jpg" alt="Car 2" width="1250" height="600">
+    </div>
+</center>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<hr>
+<div class="nikola">
+<h2> "When wireless is perfectly applied the whole earth will be converted into a huge brain,
+     which in fact it is, all things being particles of a real and rhythmic whole. 
+     We shall be able to communicate with one another instantly, irrespective of distance." </h2>
+     <br>
+     <h3> - Nikola Tesla</h3>
+    </div>
+<div class="footer" style="margin-top: 20%;"> @copyright 2024
+KCEA MKTG</div>
+</body>
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.querySelectorAll('.slides.fade');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    slides[slideIndex].style.display = 'block';
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+
+// Navigation for slideshow
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+</script>
+
+</html>
