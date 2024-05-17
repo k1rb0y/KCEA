@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCEA</title>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+   <Style>
+   
+   </Style>
+<body>
+
+    <center>
+        <button class = "register" onclick="document.location='register.html'"> Register </button>
+
+        <div class = "container"><p>KCEA </p></div>
+    
+            <div class ="length">
+        <button class ="button" onclick="document.location='index.html'"> Home </button>
+        <button class ="button1" onclick="document.location='shop.html'">  Shop </button>
+        <button class ="button" onclick="document.location='about.html'"> About Us </button>
+        <button class ="button" onclick="document.location='contacts.html'"> Contact us </button>
+        </div>
+
+    </center>
+    <br><br><br>
+    <div class="appliance"> <h1> Home Appliances</h1></div>
+    
+    <br>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="fan.jpg" alt="Product 1">
+                <h3>Electric Fan</h3>
+                <p> ₱200</p>
+                <button class = "purchase" onclick="addToCart('Electric Fan', 200)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="ceiling.jpg" alt="Product 1">
+                <h3>Ceiling Fan</h3>
+                <p>₱700</p>
+                <button class = "purchase" onclick="addToCart('Ceiling Fan', 700)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="ac window.jpg" alt="Product 1">
+                <h3>Aircon Window type</h3>
+                <p>₱8000</p>
+                <button class = "purchase" onclick="addToCart('AC Window', 8000)">Add to Cart</button>
+            </div>
+            <br>
+            <div class="product">
+                <img src="split.jpg" alt="Product 1">
+                <h3>Aircon Split type</h3>
+                <p>₱14000</p>
+                <button class = "purchase" onclick="addToCart('AC Split', 14000)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="tower.jpg" alt="Product 1">
+                <h3>Tower Fan</h3>
+                <p>₱850</p>
+                <button class = "purchase" onclick="addToCart('tower fan', 850)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="flat.jpg" alt="Product 1">
+                <h3>Flat screen TV</h3>
+                <p>₱23000</p>
+                <button class = "purchase" onclick="addToCart('Flat Tv', 23000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="curved.jpg" alt="Product 1">
+                    <h3>Curved screen TV</h3>
+                    <p>₱32000</p>
+                    <button class = "purchase" onclick="addToCart('Curved tv', 32000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="s speaker.jpg" alt="Product 1">
+                    <h3>Small Speaker</h3>
+                    <p>₱3000</p>
+                    <button class = "purchase" onclick="addToCart('S speaker', 3000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="b speaker.jpg" alt="Product 1">
+                    <h3>Big Speaker</h3>
+                    <p>₱9000</p>
+                    <button class = "purchase" onclick="addToCart('B speaker', 9000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="lamp.jpg" alt="Product 1">
+                    <h3>Light Lamp</h3>
+                    <p>₱250</p>
+                    <button class = "purchase" onclick="addToCart('Lamp', 250)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="cignal.jpg" alt="Product 1">
+                    <h3>Cignal HD kit</h3>
+                    <p>₱2000</p>
+                    <button class = "purchase" onclick="addToCart('Cignal', 2000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="tj.jpg" alt="Product 1">
+                    <h3>TJ karaoke</h3>
+                    <p>₱7500</p>
+                    <button class = "purchase" onclick="addToCart('TJ karaoke', 7500)">Add to Cart</button>
+                </div>
+
+                <br>
+                <div class="appliance"><h1> Kitchen Appliances</h1></div>
+                
+                <br>
+                <div class="product">
+                    <img src="rice.jpg" alt="Product 1">
+                    <h3>Rice Cooker</h3>
+                    <p>₱1800</p>
+                    <button class = "purchase" onclick="addToCart('Rice Cooker', 1800)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="download.jpg" alt="Product 1">
+                    <h3>Coffee Maker</h3>
+                    <p>₱2600</p>
+                    <button class = "purchase" onclick="addToCart('Coffee Maker', 2600)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images (1).jpg" alt="Product 1">
+                    <h3>Mixer</h3>
+                    <p>₱999</p>
+                    <button class = "purchase" onclick="addToCart('mixer', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.jpg" alt="Product 1">
+                    <h3>Blender</h3>
+                    <p>₱799</p>
+                    <button class = "purchase" onclick="addToCart('Blender', 799)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="dishwaser.jpg" alt="Product 1">
+                    <h3>Dishwasher</h3>
+                    <p>₱8599</p>
+                    <button class = "purchase" onclick="addToCart('Dishwasher', 8599)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="oven.jpg" alt="Product 1">
+                    <h3>Oven </h3>
+                    <p>₱5999</p>
+                    <button class = "purchase" onclick="addToCart('Oven', 5999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="microwave.jpg" alt="Product 1">
+                    <h3>Microwave</h3>
+                    <p>₱7799</p>
+                    <button class = "purchase" onclick="addToCart('Microwave', 7799)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="airfryer.jpg" alt="Product 1">
+                    <h3>Air Fryer</h3>
+                    <p>₱2399</p>
+                    <button class = "purchase" onclick="addToCart('Air Fryer', 2399)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="stove.jpg" alt="Product 1">
+                    <h3>Stove</h3>
+                    <p>₱1999</p>
+                    <button class = "purchase" onclick="addToCart('Stove', 1999)">Add to Cart</button>
+                    </div>
+                <div class="product">
+                    <img src="pressure.jpg" alt="Product 1">
+                    <h3>Pressure Cooker</h3>
+                    <p>₱4899</p>
+                    <button class = "purchase" onclick="addToCart('Pressure Cooker', 4899)">Add to Cart</button>
+                </div>
+                    <div class="product">
+                    <img src="grill.jpg" alt="Product 1">
+                    <h3>Electric Grill</h3>
+                    <p>₱2599</p>
+                    <button class = "purchase" onclick="addToCart('Grill', 2599)">Add to Cart</button>
+                </div>
+                    <div class="product">
+                    <img src="grinder.jpg" alt="Product 1">
+                    <h3>Grinder</h3>
+                    <p>₱1299</p>
+                    <button class = "purchase" onclick="addToCart('F1 T-Shirt', 1299)">Add to Cart</button>
+                </div> 
+                <br>
+
+                <div class="appliance"><h1> Other Appliances</h1></div>
+                <br>
+                <div class="product">
+                    <img src="iron.jpg" alt="Product 1">
+                    <h3>Dry Iron</h3>
+                    <p>₱299</p>
+                    <button class = "purchase" onclick="addToCart('Iron', 299)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="washing.jpg" alt="Product 1">
+                    <h3>Washing Machine</h3>
+                    <p>₱5599</p>
+                    <button class = "purchase" onclick="addToCart('Washing', 5599)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="dryer.jpg" alt="Product 1">
+                    <h3>Dryer</h3>
+                    <p>₱3799</p>
+                    <button class = "purchase" onclick="addToCart('Dryer', 3799)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="2 in 1.jpg" alt="Product 1">
+                    <h3>2in1 washing machine</h3>
+                    <p>₱10299</p>
+                    <button class = "purchase" onclick="addToCart('2in1 machine', 10299)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="water.jpg" alt="Product 1">
+                    <h3>Water Dispenser</h3>
+                    <p>₱1999</p>
+                    <button class = "purchase" onclick="addToCart('dispenser', 1999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="vacum.jpg" alt="Product 1">
+                    <h3>Vacuum Cleaner</h3>
+                    <p>₱899</p>
+                    <button class = "purchase" onclick="addToCart('Vacuum', 899)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="heater.jpg" alt="Product 1">
+                    <h3>Shower Heater</h3>
+                    <p>₱4599</p>
+                    <button class = "purchase" onclick="addToCart('Shower Heater', 4599)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="bulb.jpg" alt="Product 1">
+                    <h3>Light Bulb</h3>
+                    <p>₱59</p>
+                    <button class = "purchase" onclick="addToCart('Bulb', 59)">Add to Cart</button>
+                </div>
+                
+        </div>
+    </div>
+    <br>
+    
+    <!-- Cart -->
+    <div class="cart" id="cart">
+        <h2 align = "right">Cart:</h2>
+        <ul id="cart-items"></ul>
+        <p align = "right">Total: $<span id="total">0</span></p>
+        <button id="buy-btn">Cashout</button>
+        <!-- Add a div to hold the receipt -->
+        <div id="receipt-container" class="receipt-container" style="display: none;">
+            <div class="receipt">
+                <h2 align = "left">Receipt</h2>
+                <ul id="receipt-items" class="receipt-items">
+                    <!-- Receipt items will be dynamically added here -->
+                </ul>
+                <p align = "right">Total: $<span id="total-receipt">0.00</span></p>
+                <button id="close-receipt-btn" onclick="closeReceipt()">CLOSE</button> <!-- Close button -->
+            </div>
+        </div>
+    
+
+    <script src="app.js">
+       
+    </script>
+</body>
+</html>

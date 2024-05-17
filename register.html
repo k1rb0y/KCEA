@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KCEA</title>
+    </head>
+    <style>
+        body {
+            background-image: url('kv3.jpg'); 
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: left;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        div {
+            background-color: gray;
+            border: solid;
+            border-radius: 14px;
+            border-color: darkblue;
+            padding: 150px 40px;
+            height: 250px;
+            width: 15%;
+            padding-top: 10px;
+        }
+        form {
+            text-align: left;
+            border-radius: 8px;
+
+        }
+        .box {
+            border: solid;
+            border-radius: 2px;
+            width: 100%;
+            border-color: lightcyan;
+        }
+
+    </style>
+    <body>  
+        <br><br>
+        <center>
+        <h1> Register </h1>
+    </center>
+    <center>   
+            <div>
+            <form>
+            <label for="fullname"> Full Name: </label>
+            <br>
+            <input class = "box" type = "text" id = "name" name = "name">
+            <br><br>
+            <label for = "email"> Email: </label>
+            <br>
+            <input class = "box" type = "email" id = "email" name = "email">
+            <br><br>
+            <label for = "password">Password: </label>
+            <br>
+            <input class = "box" type = "password" id = "pwd" name = "pwd" required>
+            <br><br>
+            <label for="address"> Address: </label>
+            <br>
+            <input class = "box" type = "text" id = "address" name = "address">
+            <br><br>
+            <label for = "phone"> Tel no.:</label>
+            <br>
+            <input class = "box" type = "number" id = "phone" name = "phone" placeholder="09xx-xxx-xxxx">
+            <br><br>
+            <input class = "button" type = "submit" value="submit" onclick="Redirect()">
+        </form>
+            </div>
+    </center>
+    </body>
+    <script>
+        function Redirect() {
+
+            alert("Registration Complete.");
+            window.location.assign("Index.html");
+
+        }
+    </script>
+</html>
